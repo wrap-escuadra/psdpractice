@@ -236,7 +236,7 @@ h2{
 }
 
 .col-4-app p{
-	animation: 1s ease-out 0s 1 slideUp;
+	/*animation: 1s ease-out 0s 1 slideUp;*/
 	font-family:  HelveticaNeue-Thin;
 	font-size: 18px;
 	line-height: 24px;
@@ -389,8 +389,12 @@ footer p{
 
 .inline {
 	display: inline-block;
-	font-size: 15px;
+	font-size: 13px;
 	vertical-align: middle;
+}
+.inline a{
+	text-decoration: none;
+	color: black;
 }
 
 .cr, .me{
@@ -439,4 +443,74 @@ footer p{
 
 .js-wp-2{	
 	opacity: 1;
+}
+
+
+/* media queries / responsiveness */
+
+@media only screen and (max-width:1120px) {
+	.cta-info{
+		padding-right: 40px;
+	}
+
+	.logo{
+		display: none;
+	}
+
+	.download-info{
+		width: 80%;
+		padding-left: 40px;
+		/*text-align: center;*/
+	}
+}
+
+@media only screen and (max-width: 860px){
+	/*.iphone,
+	.iphone-on,
+	.iphone-btn*/
+	.imgs
+	{
+		display: none;
+	}
+
+	.cta-info{
+		width: 100%;
+		text-align: center;
+	}
+
+	.p-features{
+		padding: 0px 10px;
+	}
+
+	.col-4-app{
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
+
+	}
+
+	.fb, .twitter, .dribble{
+		margin-top: 20px;
+	}
+
+
+}
+
+@media only screen and (max-width: 740px){
+	.col-4-footer{
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+		padding: 10px;
+
+	}
+
+	.logo-footer{
+		margin-bottom: 0;
+	}
+
+	.cr:after,
+	.me:after {
+		display: none;
+	}
 }
