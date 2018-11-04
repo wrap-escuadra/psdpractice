@@ -158,6 +158,9 @@ h2{
 	/*margin: 40px;*/
 }
 
+header{
+
+}
 .cta {
 	display: inline-block;
     margin-top: 90px;
@@ -215,7 +218,7 @@ h2{
 	padding-right: 20px;
 }
 
-/
+
 /* APP FEATURES */
 
 #app-features h2{
@@ -585,4 +588,47 @@ footer p{
 	.me:after {
 		display: none;
 	}
+}
+
+
+.div-red-rectangle{
+    background: url('../img/red-rectangle.png');
+    background-size: cover;
+    height: 80px;
+    width: 912px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: -70px;
+    margin-right: -70px;
+    /*vertical-align: middle;*/
+    font-weight: bold;
+    padding: 12px 80px;
+    position: relative;
+}
+
+
+.div-red-rectangle:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid #7d0000;
+    border-left: 16px solid transparent;
+    bottom: -14px;
+    left: -1px;
+    right: 0;
+    z-index: 99;
+}
+
+.div-red-rectangle:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid #7d0000;
+    border-right: 16px solid transparent;
+    right: -1px;
+    bottom: -14px;
 }
